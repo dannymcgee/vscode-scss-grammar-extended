@@ -1210,7 +1210,7 @@
 			]
 		},
 		"property_list": {
-			"begin": "{",
+			"begin": "\\{",
 			"beginCaptures": {
 				"0": {
 					"name": "punctuation.section.property-list.begin.bracket.curly.scss"
