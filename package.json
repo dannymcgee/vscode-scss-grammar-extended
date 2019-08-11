@@ -7,7 +7,7 @@
     "publisher": "dannymcgee",
     "license": "MIT",
     "icon": "icon.png",
-    "keywords": ["syntax", "sass"],
+    "keywords": ["syntax", "sass", "bem"],
     "repository": {
         "type": "git",
         "url": "https://github.com/dannymcgee/vscode-scss-grammar-extended"
