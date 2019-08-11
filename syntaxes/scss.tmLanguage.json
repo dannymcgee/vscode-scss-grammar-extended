@@ -661,7 +661,7 @@
 					"name": "meta.at-rule.namespace.scss",
 					"patterns": [
 						{
-							"include": "#variables"
+							"include": "#sass-var"
 						},
 						{
 							"include": "#property_values"
@@ -1135,7 +1135,6 @@
 					}
 				}
 			]
-			
 		},
 		"operators": {
 			"match": "[-+*/](?!\\s*[-+*/])",
@@ -1188,6 +1187,10 @@
 					"end": "$|(?![-a-z])",
 					"name": "meta.property-name.scss",
 					"patterns": [
+						{
+							"comment": "FIXME: Not working because of the `begin` pattern",
+							"include": "#css-var"
+						},
 						{
 							"include": "source.css#property-names"
 						},
@@ -1722,7 +1725,7 @@
 		"variable": {
 			"patterns": [
 				{
-					"include": "#variables"
+					"include": "#sass-var"
 				},
 				{
 					"include": "#interpolation"
@@ -1778,9 +1781,13 @@
 				}
 			]
 		},
-		"variables": {
-			"match": "(\\$|\\-\\-)[A-Za-z0-9_-]+\\b",
-			"name": "variable.scss"
+		"sass-var": {
+			"match": "\\$[A-Za-z0-9_-]+\\b",
+			"name": "variable.sass-var.scss"
+		},
+		"css-var": {
+			"match": "--[A-Za-z0-9_-]+\\b",
+			"name": "variable.css-var.scss"
 		}
 	}
 }
