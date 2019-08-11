@@ -1,10 +1,20 @@
 {
-    "name": "custom-sass-syntax",
+    "name": "scss-grammar-extended",
     "displayName": "SCSS Grammar Extended",
-    "description": "Adds some additional token and pattern recognitions to the default SCSS grammar.",
+    "description": "Adds some additional token and pattern recognitions to VS Code's default SCSS grammar.",
     "version": "1.0.0",
     "author": "Danny McGee",
     "publisher": "dannymcgee",
+    "license": "MIT",
+    "icon": "icon.png",
+    "keywords": ["syntax", "sass"],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dannymcgee/vscode-scss-grammar-extended"
+    },
+    "bugs": {
+        "url": "https://github.com/dannymcgee/vscode-scss-grammar-extended/issues"
+    },
     "engines": { "vscode": "*" },
     "contributes": {
         "grammars": [{
