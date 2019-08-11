@@ -1493,7 +1493,7 @@
 					}
 				},
 				{
-					"match": "--[a-zA-Z_0-9]*",
+					"match": "--[-a-zA-Z_0-9]*",
 					"name": "entity.other.attribute-name.class.css",
 					"captures": {
 						"0": { "name": "bem.support.modifier.scss" }
