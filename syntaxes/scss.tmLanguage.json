@@ -225,8 +225,8 @@
 			"name": "meta.at-rule.for.scss",
 			"patterns": [
 				{
-					"match": "(==|!=|<=|>=|<|>|from|to|through)",
-					"name": "keyword.control.operator"
+					"match": "\\b(==|!=|<=|>=|<|>|from|to|through|in)\\b",
+					"name": "keyword.control.operator.scss"
 				},
 				{
 					"include": "#variable"
