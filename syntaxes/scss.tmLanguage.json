@@ -1478,14 +1478,6 @@
 					"captures": {
 						"0": { "name": "bem.support.modifier.scss" }
 					}
-				},
-				{
-					"match": "(&)(--[-a-zA-Z_0-9]*)",
-					"name": "entity.other.attribute-name.class.css",
-					"captures": {
-						"1": { "name": "entity.name.tag.reference.scss" },
-						"2": { "name": "bem.support.modifier.scss" }
-					}
 				}
 			]
 		},
