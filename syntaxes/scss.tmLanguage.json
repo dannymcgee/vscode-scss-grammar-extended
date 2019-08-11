@@ -1125,6 +1125,18 @@
 				}
 			]
 		},
+		"ng_pseudos": {
+			"patterns": [
+				{
+					"match": "(:|::)(host-context|ng-deep)",
+					"name": "entity.other.attribute-name.pseudo-class.css",
+					"captures": {
+						"1": { "name": "punctuation.definition.entity.css" }
+					}
+				}
+			]
+			
+		},
 		"operators": {
 			"match": "[-+*/](?!\\s*[-+*/])",
 			"name": "keyword.operator.css"
@@ -1597,6 +1609,9 @@
 				},
 				{
 					"include": "source.css#functional-pseudo-classes"
+				},
+				{
+					"include": "#ng_pseudos"
 				}
 			]
 		},
