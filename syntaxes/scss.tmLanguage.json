@@ -1293,7 +1293,11 @@
 				},
 				{
 					"name": "constant.language.null.scss",
-					"match": "null"
+					"match": "\\bnull\\b"
+				},
+				{
+					"name": "constant.language.boolean.scss",
+					"match": "\\b(true|false)\\b"
 				},
 				{
 					"begin": "\\(",
